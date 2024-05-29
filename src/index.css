@@ -1,3 +1,169 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 1;
+    left: 16px;
+  }
+
+  .topleft img{
+    width: 150px;
+    height: 80px;
+  }
+
+  .policy-bg{
+    background-color: whitesmoke;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    /* position: relative; */
+    /* padding-top: 580px; */
+    /* left: 16px; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    align-items: center;
+    background-color:rgb(37, 143, 37);
+  }
+
+
+  @media  (max-width:1000px) and (min-width:900px){
+    .bottomleft {
+         /* position: relative; */
+    /* padding-top: 580px; */
+    /* left: 16px; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    align-items: center;
+    background-color:rgb(37, 143, 37);
+      }
+  }
+
+  @media (max-width:900px) and (min-width:760px) {
+    .bottomleft {
+         /* position: relative; */
+    /* padding-top: 580px; */
+    /* left: 16px; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    align-items: center;
+    padding: 16px 10px;
+    background-color:rgb(37, 143, 37);
+      }
+  }
+.body{
+    position: absolute;
+    top: 4%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+/*     background-color: #2a9d8f; */
+}
+  @media (max-width:480px) and (min-width:320px) {
+    .bottomleft {
+         /* position: relative; */
+    /* padding-top: 580px; */
+    /* left: 16px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 100%; */
+    align-items: center;
+    text-align: center;
+    background-color:rgb(37, 143, 37);
+      }
+         .body{
+   
+    top: 7%;
+   
+}
+  }
+
+  .pointer{
+    cursor: pointer;
+  }
+
+  .pointer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .pointer a:hover{
+    font-weight: 600;
+  }
+
+
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+.text{
+  /* display: flex;
+  align-items: center; */
+  margin: 0px 30px;
+}
+
+.text-heading{
+  font-weight: 600;
+}
+
+.para-text{
+  margin: 20px 35px;
+}
+
+.publish{
+  display:"flex";
+  align-items:"center"
+}
+
+
+.progress{
+    position: relative;
+    height: 10px;
+    width: 2110%;
+    border: 5px solid rgb(37, 143, 37);
+    border-radius: 15px;
+}
+.progress .color{
+    position: absolute;
+    background-color: blue;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};

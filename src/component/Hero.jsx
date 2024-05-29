@@ -11,6 +11,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Features", href: "/features" },
   { name: "Testmonials", href: "/testmonials" },
+  { name: "Private Policy", href: "/privatepolicy" },
 ];
 
 const Hero = () => {
